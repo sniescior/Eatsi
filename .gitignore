@@ -1,6 +1,6 @@
-menu-positions/banners/*
+menu-positions/banners
 carousel-images/*
 close.png
 menu.png
 demo.html
-images/*
+images
