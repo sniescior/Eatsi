@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/fontello.css">
+    <title>Eatsi - wine menu</title>
+</head>
+<body>
+
+    <div class="media-menu" id="menu">
+        <ul class="main-nav-items">
+            <li class="main-nav-item"><a href="#" class="main-nav-link">Locations</a></li>
+            <li class="main-nav-item"><a href="#" class="main-nav-link">Giftcards</a></li>
+            <li class="main-nav-item"><a href="#" class="main-nav-link">Bookings</a></li>
+            <li class="main-nav-item"><a href="#" class="main-nav-link">Feedback</a></li>
+        </ul>
+    </div>
+
+    <div class="myContainer" id="container">
+        <nav class="main-nav smart-scroll">
+            <div class="logo-box normal-logo">
+                <h2 class="main-logo-title"><a href="../../index.html">Eatsi</a></h2>
+                <h3 class="sub-logo-title">wine</h3>
+            </div>
+            <ul class="social-media-nav-items">
+                <li class="media-nav-item">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                </li>
+                <li class="media-nav-item">
+                    <a href="#"><i class="icon-instagram"></i></a>
+                </li>
+            </ul>
+            <div class="toggle" onclick="toggleMenu();"><i class="icon-menu" id="open-button" style="opacity: 1; transition: .3s ease-in-out;"></i><i class="icon-cancel" id="close-button" style="opacity: 0; position: absolute; top: 50%;
+                left: 50%; transform: translate(-50%, -50%); transition: .3s ease-in-out;"></i></div>
+        </nav>
+    
+        <header class="header"></header>
+
+        <section id="banner">
+            <div class="content">
+                <h2 class="title">Red wines</h2>
+                <h3 class="sub-title">
+                    Cabernet Sauvignon is a full-bodied red grape first heavily planted in the Bordeaux region. Today, it's the most popular wine variety in the world...
+                </h3>
+                <ul class="items">
+                    <li><a>Rioja Tinto</a><span class="price">&#163; 23.50</span></li>
+                    <li><a>House Red</a><span class="price">&#163; 22.50</span></li>
+                    <li><a>Cotes Du Rhone</a><span class="price">&#163; 29.50</span></li>
+                    <li><a>Bourgogne Pinot Noir</a><span class="price">&#163; 44.00</span></li>
+                    <li><a>Beaujolais Villages</a><span class="price">&#163; 25.90</span></li>
+                    <li><a>Emilio Moro</a><span class="price">&#163; 47.90</span></li>
+                    <li><a>Prado Enea Tinto Gran Reserva</a><span class="price">&#163; 124.00</span></li>
+                </ul>
+            </div>
+            <div class="bannerImg"><img src="banners/red-wine.jpg"></div>
+            
+        </section>
+
+        <section id="banner">
+            <div class="bannerImg"><img src="banners/white-wine.jpg"></div>
+            <div class="content">
+                <h2 class="title">White wines</h2>
+                <h3 class="sub-title">
+                    The white grapes from which white wine is mainly produced are green or yellow of which there are many so that white wine can be produced...
+                </h3>
+                <ul class="items">
+                    <li><a>Rioja Blanco</a><span class="price">&#163; 23.50</span></li>
+                    <li><a>House White</a><span class="price">&#163; 22.50</span></li>
+                    <li><a>Rioja El Coto Blanco</a><span class="price">&#163; 18.90</span></li>
+                    <li><a>Muscadet Sur Lie</a><span class="price">&#163; 25.90</span></li>
+                    <li><a>Sancerre</a><span class="price">&#163; 52.00</span></li>
+                    <li><a>Chablis</a><span class="price">&#163; 46.50</span></li>
+                    <li><a>Greco Di Tufo</a><span class="price">&#163; 53.50</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="banner">
+            <div class="content">
+                <h2 class="title">Champagnes</h2>
+                <h3 class="sub-title">
+                    Most Champagnes, including Rosé wines, are made from a blend of all three grapes, although Blanc de blanc Champagnes are made from 100%...
+                </h3>
+                <ul class="items">
+                    <li><a>House Champagne</a><span class="price">&#163; 55.00</span></li>
+                    <li><a>Moet Chandon</a><span class="price">&#163; 85.00</span></li>
+                    <li><a>Veuve Clicquot</a><span class="price">&#163; 105.90</span></li>
+                    <li><a>Bollinger</a><span class="price">&#163; 110.00</span></li>
+                    <li><a>Laurent Perrier Rose</a><span class="price">&#163; 115.00</span></li>
+                    <li><a>Dom Perignon</a><span class="price">&#163; 225.00</span></li>
+                </ul>
+            </div>
+            <div class="bannerImg"><img src="banners/champagne.jpg"></div>
+        </section>
+
+        <section id="banner">
+            <div class="bannerImg"><img src="banners/sparkling-wine.jpg"></div>
+            <div class="content">
+                <h2 class="title">Sparkling wines</h2>
+                <h3 class="sub-title">
+                    Sparkling wine is a wine with significant levels of carbon dioxide in it, making it fizzy. The classic example of a sparkling wine is...                </h3>
+                <ul class="items">
+                    <li><a>Prosecco</a><span class="price">&#163; 34.00</span></li>
+                    <li><a>Cava</a><span class="price">&#163; 34.00</span></li>
+                    <li><a>Cava Rosado</a><span class="price">&#163; 34.00</span></li>
+                    <li><a>Spumante Rose</a><span class="price">&#163; 34.00</span></li>                        
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <nav class="footer-nav">
+            <a href="#" class="footer-nav-item">Terms & conditions</a>
+            <a href="#" class="footer-nav-item">Privacy statement</a>
+            <a href="#" class="footer-nav-item">Cookie policy</a>
+        </nav>
+        <small class="copyright">
+            &copy; 2018 - 2021 Eatsi. All Rights Reserved.
+        </small>
+    </footer>
+
+    <nav class="supporting-nav">
+        <a href="../../index.html">Home</a>
+        <span class="arrow"><i class="icon-left"></i></span>
+
+        <div class="logo-mini-box">
+            <h2 class="logo-mini-box-text">Eatsi<span>.</span></h2>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../menu.js"></script>
+</body>
+</html>

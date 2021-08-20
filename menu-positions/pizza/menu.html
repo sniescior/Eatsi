@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/fontello.css">
+    <title>Eatsi - pizza</title>
+</head>
+<body>
+
+    <div class="media-menu" id="menu">
+        <ul class="main-nav-items">
+            <li class="main-nav-item"><a href="#" class="main-nav-link">Locations</a></li>
+            <li class="main-nav-item"><a href="#" class="main-nav-link">Giftcards</a></li>
+            <li class="main-nav-item"><a href="#" class="main-nav-link">Bookings</a></li>
+            <li class="main-nav-item"><a href="#" class="main-nav-link">Feedback</a></li>
+        </ul>
+    </div>
+
+    <div class="myContainer" id="container">
+        <nav class="main-nav smart-scroll">
+            <div class="logo-box normal-logo">
+                <h2 class="main-logo-title"><a href="../../index.html">Eatsi</a></h2>
+                <h3 class="sub-logo-title">pizza</h3>
+            </div>
+            <ul class="social-media-nav-items">
+                <li class="media-nav-item">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                </li>
+                <li class="media-nav-item">
+                    <a href="#"><i class="icon-instagram"></i></a>
+                </li>
+            </ul>
+            <div class="toggle" onclick="toggleMenu();"><i class="icon-menu" id="open-button" style="opacity: 1; transition: .3s ease-in-out;"></i><i class="icon-cancel" id="close-button" style="opacity: 0; position: absolute; top: 50%;
+                left: 50%; transform: translate(-50%, -50%); transition: .3s ease-in-out;"></i></div>
+        </nav>
+    
+        <header class="header"></header>
+
+        <section id="banner">
+            <div class="wrapper">
+                <div class="card">
+                    <div class="cardImg"><img src="banners/old-mexico.jpg"></div>
+                    <div class="title">Old Mexico</div>
+                    <div class="ingredients">
+                        <p>Cheese, bolognese meat, black olives, hot peppers, onion, tabasco, oregano</p>
+                    </div>
+                    <div class="additional-info">
+                        <div class="price">
+                            <p>&#163; 16.49</p>
+                        </div>
+                        <div class="order-options">
+                            <ul>
+                                <li><a href="#"><i class="icon-truck"></i></a></li>
+                                <li><a href="#"><i class="icon-shopping-bag"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="cardImg"><img src="banners/americana.jpg"></div>
+                    <div class="title">Americana</div>
+                    <div class="ingredients">
+                        <p>Cheese, grilled chicken, onion, tomatoes, and oregano</p>
+                    </div>
+                    <div class="additional-info">
+                        <div class="price">
+                            <p>&#163; 11.90</p>
+                        </div>
+                        <div class="order-options">
+                            <ul>
+                                <li><a href="#"><i class="icon-truck"></i></a></li>
+                                <li><a href="#"><i class="icon-shopping-bag"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="cardImg"><img src="banners/margharita.jpg"></div>
+                    <div class="title">Margharita</div>
+                    <div class="ingredients">
+                        <p>Parmesan and oregano</p>
+                    </div>
+                    <div class="additional-info">
+                        <div class="price">
+                            <p>&#163; 12.50</p>
+                        </div>
+                        <div class="order-options">
+                            <ul>
+                                <li><a href="#"><i class="icon-truck"></i></a></li>
+                                <li><a href="#"><i class="icon-shopping-bag"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="cardImg"><img src="banners/ny-style.jpg"></div>
+                    <div class="title">NY Style</div>
+                    <div class="ingredients">
+                        <p>Double cheese, salami, and oregano</p>
+                    </div>
+                    <div class="additional-info">
+                        <div class="price">
+                            <p>&#163; 14.90</p>
+                        </div>
+                        <div class="order-options">
+                            <ul>
+                                <li><a href="#"><i class="icon-truck"></i></a></li>
+                                <li><a href="#"><i class="icon-shopping-bag"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="cardImg"><img src="banners/queens.jpg"></div>
+                    <div class="title">Queens</div>
+                    <div class="ingredients">
+                        <p>Cheese, grilled chicken, corn, and oregano</p>
+                    </div>
+                    <div class="additional-info">
+                        <div class="price">
+                            <p>&#163; 17.50</p>
+                        </div>
+                        <div class="order-options">
+                            <ul>
+                                <li><a href="#"><i class="icon-truck"></i></a></li>
+                                <li><a href="#"><i class="icon-shopping-bag"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="cardImg"><img src="banners/fifth-avenue.jpg"></div>
+                    <div class="title">Fifth Avenue</div>
+                    <div class="ingredients">
+                        <p>Cheese, Parma ham, blue cheese, sun-dried tomatoes, black olives, and fresh arugula</p>
+                    </div>
+                    <div class="additional-info">
+                        <div class="price">
+                            <p>&#163; 15.20</p>
+                        </div>
+                        <div class="order-options">
+                            <ul>
+                                <li><a href="#"><i class="icon-truck"></i></a></li>
+                                <li><a href="#"><i class="icon-shopping-bag"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="cardImg"><img src="banners/boss.jpg"></div>
+                    <div class="title">Boss</div>
+                    <div class="ingredients">
+                        <p>Eat what makes You happy!<br>Choose any extra pizza topping from the list down below.</p>
+                    </div>
+                    <div class="additional-info">
+                        <div class="price">
+                            <p>from &#163; 12.00</p>
+                        </div>
+                        <div class="order-options">
+                            <ul>
+                                <li><a href="#"><i class="icon-truck"></i></a></li>
+                                <li><a href="#"><i class="icon-shopping-bag"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toppings">
+                <div class="topping-background">
+                    <img src="banners/toppings.jpg">
+                </div>
+                <div class="topping-content">
+                    <ul>
+                        <li><a href="#">Add an extra topping</a>
+                        <p>Pepperoni, ham, beef, chicken, bacon, red onions, caramelised onions, peppers, spinach, sweetcorn, mushrooms, pineapple, rocket, cherry tomatoes, black olives, extra mozzarella</p>
+                        <span class="price">&#163; 1.50</span>
+                        </li>
+                        <li><a href="#">Add an extra premium topping</a>
+                        <p>Meat-free pepperphoni, shaved steak, chorizo, goats’ cheese, triple cheese blend</p>
+                        <span class="price">&#163; 2.20</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="delivery">
+                <h2>Eatsi<span>delivery</span></h2>
+                <h4>With Uber Eats, Just Eat, and Glovo we deliver Your favourites.</h4>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div class="new">
+                <h2>You can now place Your order right after booking a table in preferred Eatsi restaurant!</h2>
+                <h4>This guarantees shorter waiting time.</h4>
+                <a href="#">booking</a>
+            </div>
+
+            <div class="related">
+                
+            </div>
+        </section>
+
+        
+    </div>
+
+    <footer>
+        <nav class="footer-nav">
+            <a href="#" class="footer-nav-item">Terms & conditions</a>
+            <a href="#" class="footer-nav-item">Privacy statement</a>
+            <a href="#" class="footer-nav-item">Cookie policy</a>
+        </nav>
+        <small class="copyright">
+            &copy; 2018 - 2021 Eatsi. All Rights Reserved.
+        </small>
+    </footer>
+
+    <nav class="supporting-nav">
+        <a href="../../index.html">Home</a>
+        <span class="arrow"><i class="icon-left"></i></span>
+        <div class="logo-mini-box">
+            <h2 class="logo-mini-box-text">Eatsi<span>.</span></h2>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../menu.js"></script>
+</body>
+</html>

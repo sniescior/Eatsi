@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Eatsi</title>
+</head>
+<body>
+
+    <div class="media-menu" id="menu">
+        <ul class="main-nav-items">
+            <li class="main-nav-item">
+                <a href="#" class="main-nav-link">Locations</a>
+            </li>
+            <li class="main-nav-item"><a href="#" class="main-nav-link">Giftcards</a></li>
+            <li class="main-nav-item"><a href="#" class="main-nav-link">Bookings</a></li>
+            <li class="main-nav-item">
+                <a href="#" class="main-nav-link">Feedback</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="myContainer" id="container">
+
+        <section id="banner">
+            <nav class="main-nav smart-scroll">
+                <div class="logo-box normal-logo">
+                    <h2 class="main-logo-title"><a href="#">Eatsi</a></h2>
+                    <h3 class="sub-logo-title">eat healthy</h3>
+                </div>
+                <ul class="social-media-nav-items">
+                    <li class="media-nav-item">
+                        <a href="#"><i class="icon-facebook"></i></a>
+                    </li>
+                    <li class="media-nav-item">
+                        <a href="#"><i class="icon-instagram"></i></a>
+                    </li>
+                </ul>
+                <ul class="main-nav-items">
+                    <li class="main-nav-item">
+                        <a href="#" class="main-nav-link">Locations</a><a href="#" class="context-text">and restaurants</a>
+                    </li>
+                    <li class="main-nav-item"><a href="#" class="main-nav-link">Giftcards</a></li>
+                    <li class="main-nav-item"><a href="#" class="main-nav-link">Bookings</a></li>
+                    <li class="main-nav-item">
+                        <a href="#" class="main-nav-link">Feedback</a><a href="#" class="context-text">and reviews</a>
+                    </li>
+                </ul>
+                <div class="toggle" onclick="toggleMenu();"><i class="icon-menu" id="open-button" style="opacity: 1; transition: .3s ease-in-out;"></i><i class="icon-cancel" id="close-button" style="opacity: 0; position: absolute; top: 50%;
+                    left: 50%; transform: translate(-50%, -50%); transition: .3s ease-in-out;"></i></div>
+            </nav>
+
+            <div class="bootstrap-iso">
+                <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="7500" data-bs-pause="false">
+                    <!-- <ol class="carousel-indicators">
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                    </ol> -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <div class="overlay-image" style="background-image: url('carousel-images/one.jpg');"></div>
+                        <div class="carousel-container">
+                            <h1 class="carousel-title">Award winning</h1>
+                            <p class="carousel-sub-title">Multi award winning restaurant</p>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                        <div class="overlay-image" style="background-image: url(carousel-images/two.jpg);"></div>
+                            <div class="carousel-container">
+                                <h1 class="carousel-title">Established 10 years</h1>
+                                <p class="carousel-sub-title">Family restaurant established for more than 10 years</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overlay-image" style="background-image: url('carousel-images/three.jpg');"></div>
+                            <div class="carousel-container">
+                                <h1 class="carousel-title">Top on TripAdvisor</h1>
+                                <p class="carousel-sub-title">Rated No 8 for all restaurants in the UK on Trip Advisor</p>
+                            </div>
+                        </div>
+                        <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide=prev>
+                            <!-- <span class="sr-only">Previous</span> -->
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide=next>
+                            <!-- <span class="sr-only">Previous</span> -->
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <nav class="supporting-nav">
+            <a href="#" class="banner_item active">Home</a>
+            <a href="#menu-slider" class="menu_slider_item">Menu</a>
+            <a href="#about" class="about_item">About</a>
+            <a href="#contact" class="contact_item">Contact</a>
+
+            <div class="logo-mini-box">
+                <h2 class="logo-mini-box-text">Eatsi<span>.</span></h2>
+            </div>
+        </nav>
+
+        <section id="menu-slider">
+            <div class="inner-text">
+                <h2>Expect perfection in everything we serve in our Eatsi restaurants.</h2>
+            </div>
+            <h2 class="intro-text">Here is our menu if You're in mood for...</h2>
+
+
+            <div class="button-right" id="slideRight"><i class="icon-right-big"></i></div>
+            <div class="button-left disableLeft" id="slideLeft"><i class="icon-left-big"></i></div>
+
+
+            <div id="scrolling-wrapper">
+                <div class="card">
+                    <a href="#">
+                    <img src="images/pancakes.jpg" class="preview-photo"> 
+                    <h2>Pancakes</h2>
+                    <h3>veggie friendly options</h3>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                    <img src="images/salad.jpg" class="preview-photo">
+                    <h2>Fresh salads</h2>
+                    <h3>veggie friendly options</h3>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="menu-positions/wine/menu.html">
+                    <img src="images/wine.jpg" class="preview-photo">
+                    <h2 class="noVege">Wine menu</h2>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                    <img src="images/fish.jpg" class="preview-photo">
+                    <h2 class="noVege">Fish menu</h2>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="menu-positions/pizza/menu.html">
+                    <img src="images/pizza.jpg" class="preview-photo">
+                    <h2 class="noVege">Pizza</h2>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                    <img src="images/dessert.jpg" class="preview-photo">
+                    <h2>Desserts</h2>
+                    <h3>veggie friendly options</h3>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="menu-positions/coffee/menu.html">
+                    <img src="images/coffee.jpg" class="preview-photo">
+                    <h2 class="noVege">Coffee</h2>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="menu-positions/fruit-juices/menu.html">
+                    <img src="images/fruit-juice.jpg" class="preview-photo">
+                    <h2>Fruit juices</h2>
+                    <h3>veggie friendly options</h3>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                    <img src="images/chicken.jpg" class="preview-photo">
+                    <h2 class="noVege">Chicken specialities</h2>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                    <img src="images/soup.jpg" class="preview-photo">
+                    <h2>Soups</h2>
+                    <h3>veggie friendly options</h3>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                    <img src="images/pasta.jpg" class="preview-photo">
+                    <h2>Pasta main courses</h2>
+                    <h3>veggie friendly options</h3>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="menu-positions/ice-cream/menu.html">
+                    <img src="images/ice-cream.jpg" class="preview-photo">
+                    <h2>Ice cream</h2>
+                    <h3>veggie friendly options</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="among-section">
+                <div class="overlay-among-image"><img src="images/special-meal.jpg"></div>
+                <div class="among-content">
+                    <div class="content-align" style="top: 20%;">
+                        <h2 class="among-title">Today's specials</h2>
+                        <h3 class="among-sub-title">and meals recommended by our chef for today.</h3>
+                        <div class="among-button-align"><a href="#" class="among-button">CHECK OUT</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="among-section" style="height: 250px; margin-top: 30px;">
+                <div class="overlay-among-image"><img src="images/party.jpg"></div>
+                <div class="among-content">
+                    <div class="content-align">
+                        <h2 class="among-title">Throw an unforgettable party!</h2>
+                        <h3 class="among-sub-title">In Eatsi restaurants You can celebrate birthday, have wedding and many many more.</h3>
+                        <p class="among-sub-sub-title">Organise a party with help of our team.</p>
+                        <div class="among-button-align"><a href="#" class="among-button">READ MORE</a></div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <section id="about">
+            <div class="about-info">
+                <div class="about-content">
+                    <h2 class="about-title">
+                        A bit about us,<br>since You're already here:
+                    </h2>
+                    <p class="about-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nam incidunt tempore nesciunt voluptas aut odio ullam cupiditate hic corporis, totam unde sit alias porro sapiente odit eveniet corrupti commodi.</p>
+                    <p class="about-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laboriosam asperiores odit, hic praesentium aspernatur culpa explicabo atque quidem sequi. Ullam ducimus ab aut architecto! Natus quos a ad quidem!</p>
+                
+                    <!-- <div class="features">
+                        <h2 class="features-title">Every Eatsi restaurant features:</h2> 
+                        <div class="features-wrapper">
+                            <div class="feature-card"><i class="icon-wifi"></i><p>Open Wi-Fi</p></div>
+                            <div class="feature-card"><i class="icon-black-tie"></i><p>Waitstaff</p></div>
+                            <div class="feature-card"><i class="icon-glass"></i><p>Fullbar</p></div>
+                            <div class="feature-card"><i class="icon-wheelchair"></i><p>Wheelchairs accessible</p></div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="booking-help">
+                    <img src="images/table-banner.jpg" alt="" class="booking-image">
+                    <div class="booking-align">
+                        <h2 class="booking-title">
+                            You don't pay anything to book a table.
+                        </h2>
+                        <p class="booking-paragraph">
+                            Go ahead and make Your reservation!
+                        </p>
+                        <a href="#" class="booking-button">Booking<i class="icon-right-small"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="new">
+                <h2>You can now place Your order right after booking a table in preferred Eatsi restaurant!</h2>
+                <h4>This guarantees shorter waiting time.</h4>
+            </div>
+
+            <div class="delivery">
+                <h2>Eatsi<span>delivery</span></h2>
+                <h4>With Uber Eats, Just Eat, and Glovo we deliver Your favourites.</h4>
+                <a href="#">Learn more</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <img src="images/contact.jpg" alt="" class="contact-banner-image">
+            <div class="contact-content">
+                <div class="opening-hours">
+                    <h2 class="opening-hours-title">
+                        Opening hours
+                        <p>(pm)</p>
+                    </h2>
+                    <ul class="opening-hours-list">
+                        <li class="opening-hours-item"><div class="day"><p>Monday</p></div><div class="hour"><span>12<span>30</span> &nbsp; - 11<span>00</span></span></div></li>
+                        <li class="opening-hours-item"><div class="day"><p>Tuesday</p></div><div class="hour"><span>12<span>30</span> &nbsp; - 11<span>00</span></span></div></li>
+                        <li class="opening-hours-item"><div class="day"><p>Wednesday</p></div><div class="hour"><span>12<span>30</span> &nbsp; - 11<span>00</span></span></div></li>
+                        <li class="opening-hours-item"><div class="day"><p>Thursday</p></div><div class="hour"><span>12<span>30</span> &nbsp; - 11<span>00</span></span></div></li>
+                        <li class="opening-hours-item"><div class="day"><p>Friday</p></div><div class="hour"><span>12<span>30</span> &nbsp; - 11<span>00</span></span></div></li>
+                        <li class="opening-hours-item"><div class="day"><p>Saturday</p></div><div class="hour"><span>12<span>30</span> &nbsp; - 11<span>00</span></span></div></li>
+                        <li class="opening-hours-item"><div class="day"><p>Sunday</p></div><div class="hour"><span>12<span>30</span> &nbsp; - 10<span>30</span></span></div></li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <ul class="contact-options">
+                        <li class="contact-options-item"><i class="icon-phone"></i><p>023 1456 9912</p></li>
+                        <li class="contact-options-item"><i class="icon-mail"></i><p>contact@eatsi.com</p></li>
+                        <li class="contact-options-item"><i class="icon-location"></i><p>Eatsi Restaurant, 78a Putney High St, London, SW15 1SR</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="active-footer">
+        <nav class="footer-nav">
+            <a href="#" class="footer-nav-item">Terms & conditions</a>
+            <a href="#" class="footer-nav-item">Privacy statement</a>
+            <a href="#" class="footer-nav-item">Cookie policy</a>
+        </nav>
+        <small class="copyright">
+            &copy; 2018 - 2021 Eatsi. All Rights Reserved.
+        </small>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
