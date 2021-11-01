@@ -456,6 +456,7 @@ footer .copyright {
 
     .banner .content {
         width: 90vw;
+        padding: 10px 0 0 10px;
         background-color: #fff;
         /* box-shadow: none; */
     }
