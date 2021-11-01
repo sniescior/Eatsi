@@ -454,6 +454,10 @@ footer .copyright {
         z-index: -1;
     }
 
+    .banner .bannerImg img {
+        height: 100%;
+    }
+
     .banner .content {
         width: 90vw;
         min-height: 50vh;
