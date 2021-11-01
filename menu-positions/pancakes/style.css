@@ -294,7 +294,7 @@ header .header-container .header-sub-title {
     color: #F7EA00;
 }
 
-#banner img {
+.banner img {
     position: relative;
     width: 100vw;
     max-height: 600px;
@@ -303,15 +303,15 @@ header .header-container .header-sub-title {
     z-index: -1;
 }
 
+.banner.extras {
+    margin-top: 100px;
+}
+
 .title-wrapper {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-
-/* .title-wrapper a {
-    transform: translateY(5px);
-} */
 
 .section-banner-title {
     text-align: center;
@@ -332,30 +332,76 @@ header .header-container .header-sub-title {
     gap: 20px;
 }
 
-.gallery-container .card img {
+.gallery-container .card {
+    flex: 1;
+    max-width: 400px;
+    min-width: 300px;
     height: 400px;
-    width: 400px;
-    object-fit: cover;
-    object-position: center;
     box-shadow: 0px 0px 7px 2px #9D9D9D;
 }
 
+@media screen and (max-width: 1390px) {
+    .gallery-container .card:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .gallery-container .card:first-child {
+        display: none;
+    }
+
+    .gallery-container .card {
+        max-width: unset;
+    }
+}
+
+@media screen and (max-width: 720px) and (min-width: 575px) {
+    .gallery-container .card {
+        min-width: unset;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .gallery-container .card:nth-child(3) {
+        display: none;
+    }
+}
+
+.gallery-container .card img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 .menu-options-container {
+    position: relative;
     margin: 20px 50px 10px 50px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-height: 100px;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .menu-options-container .option-card {
-    width: 40vw;
-    min-height: 150px;
+    flex: 1;
+    position: relative;
+    min-width: 45%;
+    min-height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+}
 
+.menu-options-container .last {
+    min-width: 100%;
 }
 
 .menu-options-container .option-card .option-title {
@@ -368,17 +414,136 @@ header .header-container .header-sub-title {
     font-size: 1.2em;
 }
 
+.menu-options-container .option-card.last .option-description {
+    max-width: 70%;
+}
+
+.menu-options-container .option-card.last .divider {
+    width: 80%;
+}
+
 .menu-options-container .option-card .divider {
     margin-left: 20px;
     position: relative;
     display: block;
     width: 50%;
     height: 2px;
-    background-color: #111;
+    background-color: #9D9D9D;
+}
+
+@media screen and (max-width: 1100px) {
+    .menu-options-container .option-card .option-description,
+    .menu-options-container .option-card.last .option-description,
+    .menu-options-container .option-card .option-title,
+    .menu-options-container .option-card .divider {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .menu-options-container .option-card {
+        min-width: 100%;
+    }
+
+    .menu-options-container .option-card .option-description,
+    .menu-options-container .option-card.last .option-description,
+    .menu-options-container .option-card .option-title {
+        max-width: unset;
+    }
+
+    .menu-options-container .option-card .divider {
+        width: 70%;
+    }
+}
+
+.extras-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extras-container .extras-banner {
+    width: 600px;
+    height: 800px;
+    z-index: 1;
+}
+
+.extras-container .extras-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.extras-container .extras-content {
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: 500px;
+    height: 780px;
+    box-shadow: 0 0 7px 4px #9D9D9D;
+    z-index: 0;
+}
+
+@media screen and (max-width: 1170px) {
+    .extras-section {
+        background: url('/menu-positions/pancakes/banners/extras-banner.jpg');
+        padding: 45px 0 45px 0;
+    }
+
+    .extras-container .extras-content {
+        background-color: #fff;
+        box-shadow: none;
+        height: unset;
+        width: 80%;
+    }
+
+    .extras-container .extras-banner {
+        display: none;
+    }
+
+}
+
+.extras-container .extras-content .title {
+    margin-left: 18px;
+    font-size: 1.7em;
+}
+
+.extras-container .extras-content ul {
+    padding: 0;
+}
+
+.extras-container .extras-content ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 10px 25px;
+    font-size: 1.2em;
+    transition: .3s ease-in-out;
+}
+
+.extras-container .extras-content ul li span {
+    transition: .3s ease-in-out;
+}
+
+.extras-container .extras-content ul li a {
+    transition: .3s ease-in-out;
+}
+
+.extras-container .extras-content ul li:nth-child(odd) {
+    background-color: #eee;
+}
+
+.extras-container .extras-content ul li:hover a {
+    transform: translateX(10px);
+    color: #BE0000;
+}
+
+.extras-container .extras-content ul li:hover span {
+    color: #BE0000;
 }
 
 footer {
     transition: .8s ease-in-out;
+    display: -ms-grid;
     display: grid;
     padding: 20px 0;
     z-index: 10;
@@ -429,11 +594,11 @@ footer .copyright {
         width: 80vw;
     }
 
-    #banner .bannerImg {
+    .banner .bannerImg {
         display: none;
     }
 
-    #banner .content {
+    .banner .content {
         width: 90vw;
     }
 }
@@ -466,7 +631,7 @@ footer .copyright {
         visibility: hidden;
     }
 
-    #banner .toppings .topping-content {
+    .banner .toppings .topping-content {
         width: 80vw;
     }
 }
@@ -481,11 +646,11 @@ footer .copyright {
         height: 90vh;
     }
 
-    #banner .content {
+    .banner .content {
         margin-top: 30px;
     }
 
-    #banner .content .items li a {
+    .banner .content .items li a {
         max-width: 200px;
     }
 
@@ -498,7 +663,7 @@ footer .copyright {
         width: 80vw;
     }
 
-    #banner .toppings .topping-content {
+    .banner .toppings .topping-content {
         width: 90vw;
     }
 }
