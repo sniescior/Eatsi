@@ -314,6 +314,8 @@ header .header-container .header-sub-title {
 }
 
 .section-banner-title {
+    margin-left: 15px;
+    margin-right: 15px;
     text-align: center;
     font-size: 2.3em;
 }
@@ -485,6 +487,7 @@ header .header-container .header-sub-title {
 
 @media screen and (max-width: 1170px) {
     .extras-section {
+        width: 100vw;
         background: url('/menu-positions/pancakes/banners/extras-banner.jpg');
         padding: 45px 0 45px 0;
     }
@@ -499,7 +502,34 @@ header .header-container .header-sub-title {
     .extras-container .extras-banner {
         display: none;
     }
+}
 
+@media screen and (max-width: 560px) {
+    .extras-container .extras-content {
+        width: 100%;
+        max-width: unset;
+        min-width: unset;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .extras-container .extras-content ul li a {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .extras-container .extras-content {
+        width: 100%;
+        max-width: unset;
+        min-width: unset;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .extras-container .extras-content ul li a {
+        margin-right: 10px;
+    }
 }
 
 .extras-container .extras-content .title {
