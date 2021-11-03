@@ -291,8 +291,8 @@ header .header-container .header-sub-title {
 }
 
 #banner {
-    margin-top: 10px;
-    min-height: 60vh;
+    background: url(/menu-positions/coffee/banners/banner.jpg);
+    margin-top: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -320,7 +320,7 @@ header .header-container .header-sub-title {
     margin-bottom: 40px;
     width: 50vw;
     min-height: 55vh;
-    box-shadow: 0px 0px 15px 0px #9D9D9D;
+    background-color: #fff;
 }
 
 #banner .content .title {

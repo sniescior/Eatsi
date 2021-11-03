@@ -322,7 +322,7 @@ header .header-container .header-sub-title {
 #banner .content {
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 50vw;
+    width: 80vw;
     min-height: 75vh;
     box-shadow: 0px 0px 15px 0px #9D9D9D;
 }
@@ -358,6 +358,21 @@ header .header-container .header-sub-title {
 
 #banner .content .items li .price {
     transition: .2s ease-in-out;
+    cursor: default;
+}
+
+#banner .content .items li .price span {
+    color: #555;
+}
+
+#banner .content .items li a .description {
+    font-size: .9em;
+    color: #555;
+}
+
+#banner .content .items li a .addition {
+    margin-left: 20px;
+    color: #555;
 }
 
 #banner .content .items li a {
@@ -365,6 +380,7 @@ header .header-container .header-sub-title {
     display: block;
     transition: .3s ease-in-out;
     cursor: default;
+    max-width: 75%;
 }
 
 #banner .content .items li:hover a {

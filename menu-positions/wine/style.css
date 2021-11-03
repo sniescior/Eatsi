@@ -351,16 +351,19 @@ header .header-container .header-sub-title {
 }
 
 .banner .content .items li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     list-style-type: none;
     padding: 10px 40px;
     font-size: 1.2em;
 }
 
+.banner .content .items li .item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .banner .content .items li .price {
-    transition: .2s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .banner .content .items li a {
@@ -382,7 +385,6 @@ header .header-container .header-sub-title {
 .banner .content .items li:nth-child(odd) {
     background: #eee;
 }
-
 
 footer {
     transition: .8s ease-in-out;

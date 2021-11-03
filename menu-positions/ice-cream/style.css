@@ -261,6 +261,10 @@ header {
     color: #F7EA00;
 }
 
+.banner-title {
+    display: none;
+}
+
 #banner {
     margin-top: 10px;
     min-height: 60vh;
@@ -392,12 +396,28 @@ footer .copyright {
 
 @media (max-width: 900px) {
 
+    .banner-title {
+        font-size: 2.3em;
+        text-align: center;
+        display: block;
+    }
+
     header .header-container {
         width: 80vw;
     }
 
     #banner .bannerImg {
         display: none;
+    }
+
+    #banner {
+        background: url('banners/ice-cream.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #banner .content {
+        background-color: #fff;
     }
 
     #banner .content {
