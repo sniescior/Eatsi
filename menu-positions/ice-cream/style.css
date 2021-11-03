@@ -350,6 +350,7 @@ header {
 
 footer {
     transition: .8s ease-in-out;
+    display: -ms-grid;
     display: grid;
     padding: 20px 0;
     z-index: 10;
