@@ -300,12 +300,13 @@ header .header-container .header-sub-title {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .wrapper .card {
     flex: 1;
     position: relative;
-    width: 400px;
+    min-width: 400px;
     min-height: 370px;
     background: #fff;
     border-radius: 8px;
@@ -320,7 +321,6 @@ header .header-container .header-sub-title {
 .wrapper .card .cardImg {
     overflow: hidden;
     width: 100%;
-    min-width: 400px;
     height: 200px;
 }
 
@@ -331,6 +331,14 @@ header .header-container .header-sub-title {
     object-position: center;
     transition: .5s ease-in-out;
     transition-delay: .1s;
+}
+
+@media screen and (max-width: 550px) {
+    .wrapper .card {
+        flex: unset;
+        min-width: unset;
+        width: 90vw;
+    }
 }
 
 .wrapper .card .title {
@@ -394,6 +402,10 @@ header .header-container .header-sub-title {
 .wrapper .card .additional-info .order-options ul li a:hover {
     color: #BE0000;
     transform: translateY(-3px);
+}
+
+#banner {
+    overflow: hidden;
 }
 
 #banner .delivery {
@@ -661,15 +673,6 @@ footer .copyright {
 
     #banner .content .items li a {
         max-width: 200px;
-    }
-
-    .wrapper .card {
-        width: 80vw;
-        min-height: 400px;
-    }
-
-    .wrapper .card .cardImg {
-        width: 80vw;
     }
 
     #banner .toppings .topping-content {

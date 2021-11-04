@@ -298,6 +298,8 @@ header {
     background-color: #3E7C17;
     color: #fff;
     padding: 4px 10px;
+    font-weight: 600;
+    line-height: 1;
     font-size: 1.4em;
     text-transform: uppercase;
     margin: 32px 30px 12px 30px;
