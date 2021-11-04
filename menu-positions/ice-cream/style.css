@@ -294,6 +294,15 @@ header {
     box-shadow: 0px 0px 15px 0px #9D9D9D;
 }
 
+#banner .content .vegan{
+    background-color: #3E7C17;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    margin: 32px 30px 12px 30px;
+}
+
 #banner .content .title {
     padding-left: 30px;
     text-transform: uppercase;
@@ -302,8 +311,7 @@ header {
 }
 
 #banner .content .sub-title {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 2px 30px 17px 30px;
     font-weight: 400;
     font-size: 1.1em;
     margin: 0;
@@ -311,7 +319,7 @@ header {
 
 #banner .content .items {
     width: 100%;
-    padding: 0;
+    padding: 6px 0 0 0;
 }
 
 #banner .content .items li {
