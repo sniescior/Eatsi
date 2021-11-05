@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/navbar/style.css">
+    <link rel="stylesheet" href="/styles/menu/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/fontello.css">
+    <title>Eatsi - fish menu</title>
+</head>
+<body>
+
+    <div class="media-menu" id="menu">
+        <ul class="main-nav-items">
+            <li class="main-nav-item"><a href="#" class="main-nav-link">Locations</a></li>
+            <li class="main-nav-item"><a href="#" class="main-nav-link">Giftcards</a></li>
+            <li class="main-nav-item"><a href="#" class="main-nav-link">Bookings</a></li>
+            <li class="main-nav-item"><a href="#" class="main-nav-link">Feedback</a></li>
+        </ul>
+    </div>
+
+    <div class="myContainer" id="container">
+        <nav class="main-nav smart-scroll">
+            <div class="logo-box solid normal-logo">
+                <h2 class="main-logo-title"><a href="../../index.html">Eatsi</a></h2>
+                <h3 class="sub-logo-title">fish</h3>
+            </div>
+            <ul class="social-media-nav-items">
+                <li class="media-nav-item">
+                    <a href="#" title="facebook icon"><i class="icon-facebook"></i></a>
+                </li>
+                <li class="media-nav-item">
+                    <a href="#" title="instagram icon"><i class="icon-instagram"></i></a>
+                </li>
+            </ul>
+            <div class="toggle always-visible" onclick="toggleMenu();"><i class="icon-menu" id="open-button" style="opacity: 1; transition: .3s ease-in-out;"></i><i class="icon-cancel" id="close-button" style="opacity: 0; position: absolute; top: 50%;
+                left: 50%; transform: translate(-50%, -50%); transition: .3s ease-in-out;"></i></div>
+        </nav>
+    
+        <header class="header"></header>
+
+        <h2 class="section-title">
+            Fresh fish everyday
+        </h2>
+
+        <div class="wrapper">
+            <div class="card">
+                <div class="info">
+                    <div>
+                        <h4 class="price">&#163; 22.50</h4>
+                    </div>
+                    <img src="/menu-positions/fish-menu/banners/1.jpg" alt="">
+                </div>
+                <h2 class="name">Fried scampi</h2>
+                <span class="divider"></span>
+                <h3 class="description">
+                    With Tartare Sauce
+                </h3>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <div>
+                        <h4 class="price">&#163; 22.50</h4>
+                    </div>
+                    <img src="/menu-positions/fish-menu/banners/2.jpg" alt="">
+                </div>
+                <h2 class="name">Scampi meuniere</h2>
+                <span class="divider"></span>
+                <h3 class="description">
+                    Cooked in Butter with Parsley and Lemon
+                    <br>Served with Sauté Potatoes and Fresh Vegetables in Season
+                </h3>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h4 class="price">&#163; 18.90</h4>
+                    <img src="/menu-positions/fish-menu/banners/3.jpg" alt="">
+                </div>
+                <h2 class="name">Grilled trout</h2>
+                <span class="divider"></span>
+                <h3 class="description">
+                    Served with Sauté Potatoes and Fresh Vegetables in Season
+                </h3>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h4 class="price">&#163; 18.90</h4>
+                    <img src="/menu-positions/fish-menu/banners/4.jpg" alt="">
+                </div>
+                <h2 class="name">Trout almandine</h2>
+                <span class="divider"></span>
+                <h3 class="description">
+                    Cooked in Butter with Almonds
+                    <br>Served with Sauté Potatoes and Fresh Vegetables in Season
+                </h3>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <div>
+                        <h4 class="price">&#163; 19.90</h4>
+                    </div>
+                    <img src="/menu-positions/fish-menu/banners/5.jpg" alt="">
+                </div>
+                <h2 class="name">Grilled Scotch Salmon</h2>
+                <span class="divider"></span>
+                <h3 class="description">
+                    Served with Sauté Potatoes and Fresh Vegetables in Season
+                </h3>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h4 class="price">&#163; 20.90</h4>
+                    <img src="/menu-positions/fish-menu/banners/6.jpg" alt="">
+                </div>
+                <h2 class="name">Grilled whole sea bass</h2>
+                <span class="divider"></span>
+                <h3 class="description">
+                    Served with Sauté Potatoes and Fresh Vegetables in Season
+                </h3>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h4 class="price">&#163; 33.50</h4>
+                    <img src="/menu-positions/fish-menu/banners/7.jpg" alt="">
+                </div>
+                <h2 class="name">Grilled Dover sole</h2>
+                <span class="divider"></span>
+                <h3 class="description">
+                    Served with Sauté Potatoes and Fresh Vegetables in Season
+                </h3>
+            </div>
+        </div>
+
+        <div class="note">
+            <div class="note-content">
+                    <h2>Fresh fish delivered daily</h2>
+                    <a href="#">Read more</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <nav class="footer-nav">
+            <a href="#" class="footer-nav-item">Terms & conditions</a>
+            <a href="#" class="footer-nav-item">Privacy statement</a>
+            <a href="#" class="footer-nav-item">Cookie policy</a>
+        </nav>
+        <small class="copyright">
+            &copy; 2018 - 2021 Eatsi. All Rights Reserved.
+        </small>
+    </footer>
+
+    <nav class="supporting-nav dual">
+        <a href="../../index.html">Home</a>
+        <span class="arrow"><i class="icon-left"></i></span>
+
+        <div class="logo-mini-box dual">
+            <h2 class="logo-mini-box-text">Eatsi<span>.</span></h2>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../menu.js"></script>
+</body>
+</html>

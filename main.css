@@ -5,7 +5,7 @@
 } 
 
 body {
-    width: 100vw;
+    width: 100%;
     padding: 0;
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
@@ -24,7 +24,7 @@ body {
 #banner #myCarousel {
     position: absolute;
     top: 90px;
-    width: 100vw;
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
     background-size: cover;
@@ -951,7 +951,6 @@ footer .copyright {
 
     .carousel-container {
         bottom: 100px;
-        width: 90vw;
     }
 
     #about .about-info .about-content .about-title {
