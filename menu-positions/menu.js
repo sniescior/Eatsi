@@ -83,42 +83,44 @@ document.addEventListener("click", (evt) => {
     }
 });
 
-// function to change banner image on hover over list item
-// function changeBg(url, element) {
-//     element.css('background', `url('${url}')`);
-//     element.css('background-position', `center`);
-//     element.css('background-size', `cover`);
-//     element.css('transition', `.2s ease-in-out`);
-// }
+/*
+function to change banner image on hover over list item
+function changeBg(url, element) {
+    element.css('background', `url('${url}')`);
+    element.css('background-position', `center`);
+    element.css('background-size', `cover`);
+    element.css('transition', `.2s ease-in-out`);
+}
 
-// $(function() {
-//     $(function() {
-//         $('#m_one').hover(function() {
-//             // on hover change backgroung of the element
-//             changeBg('banners/ice-cream/one.jpg', $('#meat_lovers_banner_img'));
-//         }, function() {
-//           // mouseout
-//         });
+$(function() {
+    $(function() {
+        $('#m_one').hover(function() {
+            // on hover change backgroung of the element
+            changeBg('banners/ice-cream/one.jpg', $('#meat_lovers_banner_img'));
+        }, function() {
+          // mouseout
+        });
 
-//         $('#m_two').hover(function() {
-//             // on hover change backgroung of the element
-//             changeBg('banners/ice-cream/two.jpg', $('#meat_lovers_banner_img'));
-//         }, function() {
-//           // mouseout
-//         });
+        $('#m_two').hover(function() {
+            // on hover change backgroung of the element
+            changeBg('banners/ice-cream/two.jpg', $('#meat_lovers_banner_img'));
+        }, function() {
+          // mouseout
+        });
 
-//         $('#m_three').hover(function() {
-//             // on hover change backgroung of the element
-//             changeBg('banners/ice-cream/three.jpg', $('#meat_lovers_banner_img'));
-//         }, function() {
-//           // mouseout
-//         });
+        $('#m_three').hover(function() {
+            // on hover change backgroung of the element
+            changeBg('banners/ice-cream/three.jpg', $('#meat_lovers_banner_img'));
+        }, function() {
+          // mouseout
+        });
 
-//         $('#m_four').hover(function() {
-//             // on hover change backgroung of the element
-//             changeBg('banners/ice-cream/four.jpg', $('#meat_lovers_banner_img'));
-//         }, function() {
-//           // mouseout
-//         });
-//       });
-// })
+        $('#m_four').hover(function() {
+            // on hover change backgroung of the element
+            changeBg('banners/ice-cream/four.jpg', $('#meat_lovers_banner_img'));
+        }, function() {
+          // mouseout
+        });
+      });
+})
+*/
