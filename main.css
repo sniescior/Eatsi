@@ -728,6 +728,15 @@ footer .copyright {
 }
 
 @media (max-width: 912px) {
+
+    .inner-section {
+        padding: 60px 25px;
+    }
+
+    .inner-section .content {
+        width: 90vw;
+    }
+
     #menu-slider .button-right {
         top: 340px;
     }
