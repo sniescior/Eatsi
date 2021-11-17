@@ -19,6 +19,10 @@
     box-shadow: none;
 }
 
+.main-nav .toggle #menu-toggle-button {
+    padding: 6px;
+}
+
 .main-nav .toggle {
     position: absolute;
     top: 50%;

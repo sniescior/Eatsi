@@ -89,6 +89,8 @@ header .header-container .header-sub-title {
 
 .wrapper .card .info {
     width: 100%;
+    padding-top: 5px;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: column;
     overflow: hidden;

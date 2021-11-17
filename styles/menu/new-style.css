@@ -97,6 +97,18 @@
     opacity: 1;
 }
 
+@media screen and (max-width: 1400px) {
+    #menu .menu-wrapper {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    #menu .menu-wrapper {
+        min-width: 220px;
+    }
+}
+
 @media screen and (max-width: 570px) {
     #menu {
         flex-direction: column;
