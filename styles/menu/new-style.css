@@ -1,0 +1,119 @@
+
+/* 
+    NEW MENU STYLES
+*/
+
+#menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+    box-shadow: -3px -7px 15px 5px #9D9D9D;
+    transition: .3s ease-in-out;
+    opacity: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#menu.visible {
+    top: 90px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s ease-in-out;
+}
+
+#menu .menu-wrapper {
+    margin: 8px 0 20px 0;
+    flex: 1;
+    min-width: 220px;
+    height: inherit;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#menu .menu-wrapper::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    content: '';
+    display: inline-block;
+    height: 70%;
+    width: 1px;
+    background-color: #9D9D9D;
+}
+
+#menu .menu-wrapper:last-child::after {
+    display: none;
+}
+
+#menu .menu-wrapper ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#menu .menu-wrapper ul li:first-child {
+    color: #be0000;
+    font-weight: 700;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+#menu .menu-wrapper ul li .menu-item-button {
+    color: #4B6587;
+    color: #9D9D9D;
+}
+
+#menu .menu-wrapper ul li .menu-item-button:hover {
+    color: #111;
+}
+
+#menu .menu-wrapper ul li {
+    transition: .3s ease-in-out;
+}
+
+#menu .menu-wrapper ul li a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    transition: .3s ease-in-out;
+}
+
+#menu .menu-wrapper ul:hover li a {
+    opacity: .5;
+}
+
+#menu .menu-wrapper ul li:hover a {
+    opacity: 1;
+}
+
+@media screen and (max-width: 570px) {
+    #menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menu .menu-wrapper {
+        margin-left: 2vw;
+        height: unset;
+        padding: 0;
+        align-items: initial;
+    }
+
+    #menu .menu-wrapper {
+        height: initial;
+        display: block;
+    }
+
+    #menu .menu-wrapper::after {
+        display: none;
+    }
+}
