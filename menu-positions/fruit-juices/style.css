@@ -17,39 +17,6 @@ header {
     background-size: cover;
 }
 
-header .header-container {
-    font-family: 'Noto Sans KR', sans-serif;
-    position: absolute;
-    bottom: 100px;
-    left: 0;
-    right: 0;
-    width: 70vw;
-    padding: 25px 20px 25px 20px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background: #fff;
-    box-shadow: 0px 0px 15px 0px #9D9D9D;
-    cursor: default;
-}
-
-header .header-container .header-title {
-    font-size: 1.8em;
-    font-weight: 800;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding: 0;
-    color: #BE0000;
-}
-
-header .header-container .header-sub-title {
-    font-size: 1.1em;
-    margin: 0;
-    font-weight: 600;
-    padding: 0;
-    color: #000000;
-}
-
 #banner {
     margin-top: 10px;
     min-height: 70vh;

@@ -11,48 +11,14 @@ body {
 
 header {
     position: relative;
-    height: 30vh;
+    height: 50vh;
     background: url('banners/banner.jpg');
     background-position: center;
     background-size: cover;
 }
 
-header .header-container {
-    font-family: 'Noto Sans KR', sans-serif;
-    position: absolute;
-    bottom: 100px;
-    left: 0;
-    right: 0;
-    width: 70vw;
-    padding: 25px 20px 25px 20px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background: #fff;
-    box-shadow: 0px 0px 15px 0px #9D9D9D;
-    cursor: default;
-}
-
-header .header-container .header-title {
-    font-size: 1.8em;
-    font-weight: 800;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding: 0;
-    color: #BE0000;
-}
-
-header .header-container .header-sub-title {
-    font-size: 1.1em;
-    margin: 0;
-    font-weight: 600;
-    padding: 0;
-    color: #000000;
-}
-
 #banner {
-    background: url(/menu-positions/coffee/banners/banner.jpg);
-    margin-top: 90px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,8 +45,8 @@ header .header-container .header-sub-title {
     margin-top: 40px;
     margin-bottom: 40px;
     width: 50vw;
-    min-height: 55vh;
-    background-color: #fff;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 15px 0px #9D9D9D;
 }
 
 #banner .content .title {

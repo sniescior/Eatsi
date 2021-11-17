@@ -266,9 +266,9 @@ header .header-container .header-sub-title {
 
     .extras-container .extras-content {
         background-color: #fff;
-        box-shadow: none;
         height: unset;
         width: 80%;
+        box-shadow: 0px 0px 15px 0px #9D9D9D;
     }
 
     .extras-container .extras-banner {

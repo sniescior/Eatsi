@@ -4,16 +4,18 @@
 */
 
 #menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     visibility: hidden;
     box-shadow: -3px -7px 15px 5px #9D9D9D;
+    background-color: #fff;
     transition: .3s ease-in-out;
     opacity: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: 10;
 }
 
 #menu.visible {
@@ -102,7 +104,7 @@
     }
 
     #menu .menu-wrapper {
-        margin-left: 2vw;
+        margin-left: 22px;
         height: unset;
         padding: 0;
         align-items: initial;

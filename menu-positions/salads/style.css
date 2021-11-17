@@ -81,10 +81,6 @@ header .header-container .header-sub-title {
     transition: .3s ease-in-out;
 }
 
-.wrapper .card:hover {
-    box-shadow: 0 0 15px 0 #ECE7B4;
-}
-
 @media screen and (max-width: 900px) {
     .wrapper .card {
         max-width: 80vw;

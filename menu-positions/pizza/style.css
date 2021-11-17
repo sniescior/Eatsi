@@ -272,6 +272,7 @@ header .header-container .header-sub-title {
 #banner .toppings .topping-content {
     width: 70vw;
     background-color: #fff;
+    box-shadow: 0px 0px 15px 0px #9D9D9D;
 }
 
 #banner .toppings .topping-content ul {

@@ -9,3 +9,315 @@ body {
     overflow-x: hidden;
 }
 
+header {
+    position: relative;
+    height: 50vh;
+    background: url('banners/banner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+header .header-container {
+    font-family: 'Noto Sans KR', sans-serif;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    width: 70vw;
+    padding: 25px 20px 25px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0px 0px 15px 0px #9D9D9D;
+    cursor: default;
+}
+
+header .header-container .header-title {
+    font-size: 1.8em;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    color: #BE0000;
+}
+
+header .header-container .header-sub-title {
+    font-size: 1.1em;
+    margin: 0;
+    font-weight: 600;
+    padding: 0;
+    color: #000000;
+}
+
+.section-title {
+    font-size: 2em;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.section-subtitle {
+    display: block;
+    max-width: 800px;
+    padding: 0;
+    margin: 16px auto 24px auto;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.veggie-decl {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
+    padding: 8px 10px;
+    margin: 0 auto 32px auto;
+    font-size: 1.4em;
+    text-align: center;
+    background-color: #3E7C17;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.wrapper {
+    position: relative;
+    margin: 20px 20px 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95vw;
+    min-height: 100px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.wrapper .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 350px;
+    max-width: 100%;
+    box-shadow: 0 0 15px 0 rgb(216, 216, 216);
+    padding: 12px;
+    transition: .3s ease-in-out;
+}
+
+.wrapper .card .info {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.wrapper .card .info div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .card .info img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    align-self: center;
+    box-shadow: 0 0 15px 0 #9D9D9D;
+}
+
+.wrapper .card .info .price {
+    align-self: flex-start;
+    font-size: 1.4em;
+    margin: 8px 0 16px 10px;
+    color: #555;
+    background-color: transparent;
+}
+
+.wrapper .card .divider {
+    display: block;
+    width: 80%;
+    height: 3px;
+    background-color: #777;
+}
+
+.wrapper .card .name {
+    text-align: center;
+}
+
+.wrapper .card .description {
+    padding: 0 20px;
+}
+
+.note {
+    position: relative;
+    margin-top: 40px;
+    background: url('banners/allergy-note.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note .note-content {
+    width: 70vw;
+    background-color: #fff;
+}
+
+.note .note-content {
+    width: 100%;
+    padding: 0;
+}
+
+.note .note-content {
+    position: relative;
+    list-style-type: none;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 0 #9D9D9D;
+}
+
+.note .note-content h2 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #111;
+    margin: 0;
+    padding: 0 10px 0 30px;
+    display: block;
+}
+
+.note .note-content h2::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 50%;
+    margin: 8px 0;
+    background-color: #555;
+}
+
+.note .note-content p {
+    font-size: 1.3em;
+    margin: 0;
+    font-weight: 500;
+    text-decoration: none;
+    color: #222;
+    padding: 0 50px 5px 30px;
+}
+
+.more-services {
+    margin: 0;
+    background: #eee;
+    padding: 0 10px 10px 10px;
+    font-size: 1.6em;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.more-services h2 {
+    font-size: 1.9em;
+    margin: 0;
+    font-weight: 700;
+    color: #BE0000;
+}
+
+.more-services h2 span {
+    font-size: .7em;
+    line-height: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFA900;
+}
+
+.more-services h4 {
+    margin: 0;
+    color: #444;
+    font-size: .9em;
+}
+
+.more-services a {
+    display: block;
+    font-size: .6em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #BE0000;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 15px 0px #9D9D9D;
+    transition: .3s ease-in-out;
+}
+
+.more-services a:hover {
+    box-shadow: none;
+}
+
+footer {
+    transition: .8s ease-in-out;
+    display: -ms-grid;
+    display: grid;
+    padding: 20px 0;
+    z-index: 10;
+    padding-bottom: 90px;
+}
+
+footer .footer-nav {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer-nav .footer-nav-item {
+    text-align: center;
+    color: #000000;
+    font-size: 1.1em;
+    transition: .2s ease-in-out;
+    padding: 20px 12px;
+    text-decoration: none;
+}
+
+footer .footer-nav .footer-nav-item:first-child {
+    padding-left: 30px;
+}
+
+footer .footer-nav .footer-nav-item:last-child {
+    padding-right: 30px;
+}
+
+footer .footer-nav .footer-nav-item:hover {
+    transform: translateY(5px);
+}
+
+footer .copyright {
+    text-align: center;
+    padding: 20px 0 10px 0;
+    font-size: 1.1em;
+    cursor: default;
+    width: 100vw;
+    text-align: center;
+}
+
+@media (max-width: 1005px) {
+    footer .footer-nav {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 570px) {
+    header {
+        height: 90vh;
+    }
+}
