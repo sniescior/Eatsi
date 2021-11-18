@@ -19,7 +19,14 @@
     box-shadow: none;
 }
 
-.main-nav .toggle #menu-toggle-button {
+@media screen and (max-width: 650px) {
+    .main-nav.menu-expanded {
+        box-shadow: none;
+        transform: translateY(-90px);
+    }
+}
+
+.main-nav .toggle #menu-open-button {
     padding: 6px;
 }
 
@@ -250,6 +257,7 @@
     align-items: center;
     z-index: 10;
     box-shadow: 0px 8px 15px 5px #9D9D9D;
+    transition: .3s ease-in-out;
 }
 
 .supporting-nav.dual {
@@ -335,6 +343,12 @@
 
 .supporting-nav.dual .logo-mini-box.dual .logo-mini-box-text span {
     color: #F7EA00;
+}
+
+@media screen and (max-width: 650px) {
+    .supporting-nav.menu-expanded {
+        transform: translateY(100px);
+    }   
 }
 
 @media (max-width: 1005px) {

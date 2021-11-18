@@ -12,6 +12,9 @@
 </head>
 <body>
     <div id="menu" class="">
+        <div class="toggle" onclick="toggleMenu();">
+            <i class="icon-cancel" id="menu-close-button"></i>
+        </div>
         <div class="menu-wrapper">
             <ul>
                 <li>Menu</li>
@@ -59,25 +62,25 @@
         </div>
     </div>
 
-    <div id="container">
-        <nav class="main-nav smart-scroll" id="nav">
-            <div class="logo-box solid normal-logo">
-                <h2 class="main-logo-title"><a href="../../index.html">Eatsi</a></h2>
-                <h3 class="sub-logo-title">desserts</h3>
-            </div>
-            <ul class="social-media-nav-items">
-                <li class="media-nav-item">
-                    <a href="#" title="facebook icon"><i class="icon-facebook"></i></a>
-                </li>
-                <li class="media-nav-item">
-                    <a href="#" title="instagram icon"><i class="icon-instagram"></i></a>
-                </li>
-            </ul>
-            <div class="toggle always-visible" onclick="toggleMenu();">
-                <i class="icon-menu" id="menu-toggle-button"></i>
-            </div>
-        </nav>
+    <nav class="main-nav smart-scroll" id="nav">
+        <div class="logo-box solid normal-logo">
+            <h2 class="main-logo-title"><a href="../../index.html">Eatsi</a></h2>
+            <h3 class="sub-logo-title">desserts</h3>
+        </div>
+        <ul class="social-media-nav-items">
+            <li class="media-nav-item">
+                <a href="#" title="facebook icon"><i class="icon-facebook"></i></a>
+            </li>
+            <li class="media-nav-item">
+                <a href="#" title="instagram icon"><i class="icon-instagram"></i></a>
+            </li>
+        </ul>
+        <div class="toggle always-visible" onclick="toggleMenu();">
+            <i class="icon-menu" id="menu-open-button"></i>
+        </div>
+    </nav>
 
+    <div id="container">
         <header class="header"></header>
 
         <h2 class="section-title">
@@ -164,7 +167,7 @@
         </small>
     </footer>
 
-    <nav class="supporting-nav dual">
+    <nav class="supporting-nav dual" id="auxiliary-nav">
         <a href="../../index.html">Home</a>
         <span class="arrow"><i class="icon-left"></i></span>
 

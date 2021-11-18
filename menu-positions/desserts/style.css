@@ -62,6 +62,7 @@ header .header-container .header-sub-title {
     max-width: 800px;
     padding: 0;
     margin: 16px auto 24px auto;
+    padding: 0 20px;
     font-size: 1.3em;
     text-align: center;
 }
