@@ -35,10 +35,11 @@
 }
 
 #menu #menu-close-button {
+    cursor: pointer;
     transition: .3s ease-in-out;
     transition-delay: .2s;
     position: absolute;
-    top: -30px;
+    top: -300px;
     right: 35px;
     font-size: 1.5em;
     padding: 6px;
