@@ -703,7 +703,6 @@ footer .copyright {
 
     #about .about-info .booking-help {
         width: 100vw;
-        height: 50vh;
     }
 
     #about .about-info .booking-help .booking-image {
@@ -777,7 +776,6 @@ footer .copyright {
 @media (max-width: 680px) {
 
     #about .about-info .about-content {
-        padding-bottom: 10px;
         width: 100vw;
     }
 
@@ -787,10 +785,6 @@ footer .copyright {
 
     #about .about-info .about-content .about-paragraph {
         padding: 0 30px;
-    }
-
-    #about .about-info .about-content .about-paragraph:last-child {
-        padding-bottom: 20px;
     }
 }
 
