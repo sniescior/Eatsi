@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(45deg, #fff, #be0000);
+    background-color: #fff;
     height: 100vh;
 }
 
@@ -58,7 +58,7 @@ body {
     position: relative;
     display: inline-block;
     padding: 10px 25px;
-    background: red;
+    background: #be0000;
     color: #eee;
     text-decoration: none;
     margin-top: 25px;

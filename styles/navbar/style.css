@@ -26,6 +26,15 @@
     }
 }
 
+@media screen and (max-height: 620px) {
+    .main-nav.menu-expanded {
+        box-shadow: none;
+        transform: translateY(-90px);
+        opacity: 0;
+    }
+}
+
+
 .main-nav .toggle #menu-open-button {
     padding: 6px;
 }
@@ -343,6 +352,12 @@
 
 .supporting-nav.dual .logo-mini-box.dual .logo-mini-box-text span {
     color: #F7EA00;
+}
+
+@media screen and (max-height: 620px) {
+    .supporting-nav.menu-expanded {
+        transform: translateY(100px);
+    }   
 }
 
 @media screen and (max-width: 650px) {

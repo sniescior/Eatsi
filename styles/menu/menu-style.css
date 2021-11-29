@@ -36,6 +36,14 @@
     }
 }
 
+@media screen and (max-height: 620px) {
+    #menu #menu-close-button.visible {
+        position: absolute;
+        top: 20px;
+        right: 35px;
+    }
+}
+
 #menu #menu-close-button {
     cursor: pointer;
     transition: .3s ease-in-out;
@@ -187,6 +195,28 @@
     }
 }
 
+@media screen and (max-height: 620px) {
+    #menu {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        overflow-x: scroll;
+    }
+
+    #menu .menu-lists {
+        justify-content: flex-start;
+    }
+
+    #menu.visible {
+        top: 0;
+    }
+
+    #container.menu-expanded {
+        opacity: 0;
+    }
+}
+    
 @media screen and (max-width: 650px) {
     #menu {
         flex-direction: row;
