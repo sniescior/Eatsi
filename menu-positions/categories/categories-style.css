@@ -42,18 +42,6 @@ header {
     flex: 1;
 }
 
-@media screen and (max-width: 650px) {
-    .wrapper {
-        display: -ms-grid;
-        display: grid;
-    }
-
-    .wrapper a {
-        flex: none;
-        min-width: unset;
-    }
-}
-
 .wrapper a:last-of-type {
     max-width: 100%;
 }
