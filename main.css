@@ -235,6 +235,7 @@ body {
     background-position: center;
     background-size: cover;
     padding: 50px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: center;
 }
@@ -305,7 +306,7 @@ body {
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 #about .about-info .about-content {
@@ -315,7 +316,7 @@ body {
 
 #about .about-info .about-content .about-title {
     color: #BE0000;
-    padding: 20px 80px 0 80px;
+    padding: 0px 80px 0 80px;
     font-size: 2em;
 }
 
