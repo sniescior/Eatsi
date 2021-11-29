@@ -123,9 +123,10 @@ body {
     padding: 20px 20px 20px 20px;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #716F81;
+    /* border: 3px solid #716F81; */
     right: 25px;
-    color: #716F81;
+    box-shadow: 2px 2px 0px 0px #111;
+    color: #111;
     top: 250px;
     z-index: 1;
     transition: .5s ease-in-out;
@@ -138,9 +139,10 @@ body {
     padding: 20px;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #716F81;
+    /* border: 3px solid #716F81; */
     left: 25px;
-    color: #716F81;
+    box-shadow: 2px 2px 0px 0px #111;
+    color: #111;
     top: 250px;
     z-index: 1;
     transition: .5s ease-in-out;
@@ -235,7 +237,6 @@ body {
     background-position: center;
     background-size: cover;
     padding: 50px;
-    padding-bottom: 10px;
     display: flex;
     justify-content: center;
 }
